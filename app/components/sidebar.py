@@ -22,7 +22,7 @@ def sidebar_header() -> rx.Component:
 
 
 def option_toggle(
-    icon: str, name: str, is_checked: rx.Var[bool], on_toggle: rx.event.EventHandler
+    icon: str, name: str, is_checked: rx.Var[bool], on_toggle: rx.event.EventSpec
 ) -> rx.Component:
     return rx.el.label(
         rx.icon(
