@@ -467,7 +467,7 @@ class DebloatState(rx.State):
         },
         {
             "id": "ui_tweaks",
-            "name": "UI/UX Tweaks",
+            "name": "Modifiche Interfaccia",
             "icon": "wand-2",
             "options": [
                 {
