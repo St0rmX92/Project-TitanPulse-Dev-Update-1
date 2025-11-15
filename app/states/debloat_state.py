@@ -54,7 +54,7 @@ class DebloatState(rx.State):
     debloat_categories: list[DebloatCategory] = [
         {
             "id": "gaming",
-            "name": "Gaming Optimization",
+            "name": "Ottimizzazione Gaming",
             "icon": "gamepad-2",
             "options": [
                 {
