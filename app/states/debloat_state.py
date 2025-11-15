@@ -51,7 +51,7 @@ class DebloatState(rx.State):
     debloat_categories: list[DebloatCategory] = [
         {
             "id": "gaming",
-            "name": "Ottimizzazione Gaming",
+            "name": "Gaming Optimization",
             "icon": "gamepad-2",
             "options": [
                 {
@@ -98,17 +98,17 @@ class DebloatState(rx.State):
                 },
                 {
                     "id": "mouse_precision",
-                    "name": "Ottimizza Precisione Mouse",
+                    "name": "Ottimizza Mouse Precision",
                     "icon": "mouse",
                     "default": True,
                     "command": 'Set-ItemProperty -Path "HKCU:\\Control Panel\\Mouse" -Name "MouseSpeed" -Value "1"; Set-ItemProperty -Path "HKCU:\\Control Panel\\Mouse" -Name "MouseThreshold1" -Value "0"; Set-ItemProperty -Path "HKCU:\\Control Panel\\Mouse" -Name "MouseThreshold2" -Value "0"',
                 },
                 {
                     "id": "fullscreen_optimizations",
-                    "name": "Disabilita Ottimizzazioni Schermo Intero",
+                    "name": "Disabilita Fullscreen Optimizations",
                     "icon": "monitor",
                     "default": False,
-                    "command": 'Set-ItemProperty -Path "HKCU\\System\\GameConfigStore" -Name "GameDVR_FSEBehaviorMode" -Value 2 -Force',
+                    "command": 'Set-ItemProperty -Path "HKCU:\\System\\GameConfigStore" -Name "GameDVR_FSEBehaviorMode" -Value 2 -Force',
                 },
             ],
         },
@@ -147,7 +147,7 @@ class DebloatState(rx.State):
                 },
                 {
                     "id": "flush_dns",
-                    "name": "Svuota Cache DNS",
+                    "name": "Flush DNS Cache",
                     "icon": "refresh-cw",
                     "default": True,
                     "command": "ipconfig /flushdns",
@@ -406,7 +406,7 @@ class DebloatState(rx.State):
                 },
                 {
                     "id": "update_windows",
-                    "name": "Forza Aggiornamenti Windows",
+                    "name": "Forza Aggiornamento Windows",
                     "icon": "arrow-up-circle",
                     "default": False,
                     "command": "Install-Module PSWindowsUpdate -Force -AcceptLicense; Get-WindowsUpdate -Install -AcceptAll",
@@ -464,7 +464,7 @@ class DebloatState(rx.State):
         },
         {
             "id": "ui_tweaks",
-            "name": "Personalizzazione UI/UX",
+            "name": "UI/UX Tweaks",
             "icon": "wand-2",
             "options": [
                 {
