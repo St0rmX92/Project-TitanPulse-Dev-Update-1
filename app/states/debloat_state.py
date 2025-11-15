@@ -3,9 +3,12 @@ import subprocess
 import asyncio
 import logging
 import sys
+import os
 from typing import TypedDict, Literal
 
-log_file_path = "titanpulse_debloat_log.txt"
+log_dir = os.path.join(os.path.expanduser("~"), ".titanpulse")
+os.makedirs(log_dir, exist_ok=True)
+log_file_path = os.path.join(log_dir, "titanpulse_debloat_log.txt")
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
